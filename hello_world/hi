@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+int main() {
+   /* моя первая программа на языке C */
+   printf("Hello, World! \n");
+   
+   return 0;
+}
