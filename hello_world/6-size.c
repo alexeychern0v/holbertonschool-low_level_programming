@@ -6,13 +6,16 @@
  */
 int main(void)
 {
-int intType;
-float floatType;
-double doubleType;
 char charType;
-printf("Size of int: %ld byte(s)\n", sizeof(intType));
-printf("Size of float: %ld byte(s)\n", sizeof(floatType));
-printf("Size of double: %ld byte(s)\n", sizeof(doubleType));
+int intType;
+long longType;
+long long longlongType;
+float floatType;
+
 printf("Size of char: %ld byte(s)\n", sizeof(charType));
+printf("Size of int: %ld byte(s)\n", sizeof(intType));
+printf("Size of long int: %ld byte(s)i\n", sizeof(longType));
+printf("Size of long long int: %ld byte(s)\n", sizeof(longlongType));
+printf("Size of float: %ld byte(s)\n", sizeof(floatType));
 return (0);
 }
