@@ -6,11 +6,9 @@
  */
 int main(void)
 {
-	int digit = 0;
-
-	for (digit = 0; digit <= 9; digit++)
-		putchar(digit);
+	char za = 'z';
+	for (za = 'z'; za >= 'a'; za--)
+		putchar(za);
 	putchar('\n');
 	return (0);
 }
-
