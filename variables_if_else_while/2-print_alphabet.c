@@ -10,4 +10,5 @@ int main(void)
 	for (az = 'a'; az <= 'z'; az++)
 		putchar(az);
 	return (0);
+	putchar('\n');
 }
