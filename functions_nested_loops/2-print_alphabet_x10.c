@@ -1,4 +1,4 @@
-#include"main.h"
+#include "main.h"
 /**
  * print_alphabet_x10 - use of prototype
  *
@@ -6,7 +6,7 @@
  */
 void print_alphabet_x10(void)
 {
-	int k = 0;
+	int k = 1;
 	char az = 'a';
 
 	while (k <= 10)
