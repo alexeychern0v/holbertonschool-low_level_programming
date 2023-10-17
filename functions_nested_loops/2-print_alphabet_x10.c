@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *print_alphabet_x10 - use of prototype 
+ *print_alphabet_x10 - use of prototype
  */
 void print_alphabet_x10(void)
 {
