@@ -1,0 +1,10 @@
+CC = gcc
+CFLAGS = -g
+
+all: school
+
+school: main.c
+	gcc -c 
+
+clean:
+	rm -f school
