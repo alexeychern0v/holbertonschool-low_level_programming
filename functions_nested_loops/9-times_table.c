@@ -19,17 +19,17 @@ void times_table(void)
 			result = num * kolvo;
 			if (result > 9)
 			{
-				putchar(result / 10 + '0');
-				putchar (result % 10 + '0');
+				_putchar(result / 10 + '0');
+				_putchar (result % 10 + '0');
 			}
 			else
 			{
-				putchar(result % 10 + '0');
+				_putchar(result % 10 + '0');
 			}
 			if (kolvo != 9)
 			{
-				putchar(',');
-				putchar(' ');
+				_putchar(',');
+				_putchar(' ');
 			}
 		}
 		putchar('\n');
