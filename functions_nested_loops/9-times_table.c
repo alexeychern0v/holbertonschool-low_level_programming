@@ -22,7 +22,7 @@ void times_table(void)
 				_putchar(result / 10 + '0');
 				_putchar (result % 10 + '0');
 			}
-			else if (result < 9)
+			else if (result <= 9)
 			{
 				if (kolvo != 0)
 				{
@@ -39,7 +39,6 @@ void times_table(void)
 				_putchar(',');
 				_putchar(' ');
 			}
-			
 		}
 		_putchar('\n');
 	}
