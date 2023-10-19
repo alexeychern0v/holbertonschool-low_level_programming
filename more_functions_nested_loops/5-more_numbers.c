@@ -6,10 +6,10 @@ void more_numbers(void)
 {
 	int k = 1;
 	int a = 0;
-	
+
 	while (k <= 10)
 	{
-		for (a = 0; az < 15; a++)
+		for (a = 0; a < 15; a++)
 			_putchar(a % 10 + '0');
 		_putchar('\n');
 		k++;
