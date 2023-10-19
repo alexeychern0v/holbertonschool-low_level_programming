@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 /**
  * main - Entry point
@@ -6,36 +7,32 @@
  *
  * Return: Always 0 (Success)
  */
-int main()
+void print_to_98(int n)
 {
-    int n = 98;
-    if (n < 98)
-    {
-        for (; n < 99; n++)
-                {
-                    printf("%d", n);
-                    if (n != 98)
-                    {
-                        printf(", ");
-                    }
-                }
-    }
-    
-    else if (n > 98)
-    {
-        for (; n > 97; n--)
-        {
-            printf("%d", n);
-            if (n != 98)
-            {
-                printf(", ");
-            }
-            
-        }
-    }
-    else
-    {
-        printf("98");
-    }
-    return (0);
+	if (n < 98)
+	{
+		for (; n < 99; n++)
+		{
+			printf("%d", n);
+			if (n != 98)
+			{
+				printf(", ");
+			}
+		}
+	}
+	else if (n > 98)
+	{
+		for (; n > 97; n--)
+		{
+			printf("%d", n);
+			if (n != 98)
+			{
+				printf(", ");
+			}
+		}
+	}
+	else
+	{
+		printf("98");
+	}
 }
