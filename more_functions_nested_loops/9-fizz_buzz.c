@@ -6,24 +6,24 @@
  */
 int main(void)
 {
-	int k = 0;
+	int k = 1;
 
-	for (k = 0; k < 101; k++)
+	for (k = 1; k < 101; k++)
 	{
-		if (k % 3 == 0 && k % 5 == 0 && k != 0)
+		if (k % 3 == 0 && k % 5 == 0)
 		{
 			printf("FizzBuzz ");
 		}
-		else if (k % 3 == 0 && k != 0)
+		else if (k % 3 == 0)
 		{
 			printf("Fizz ");
 		}
-		else if (k % 5 == 0 && k != 0)
+		else if (k % 5 == 0)
 		{
 			printf("Buzz");
 			if (k != 100)
 			{
-				printf(", ");
+				printf(" ");
 			}
 		}
 		else
