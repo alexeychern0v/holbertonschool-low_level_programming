@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strcpy -  copy a string
+ * _strcat -  concatenate two strings
  *
  * @dest: destinations
  *
@@ -20,7 +20,7 @@ char *_strcat(char *dest, char *src)
 	}
 	while (src[j] != '\0')
 	{
-		dest[len] = src [j];
+		dest[len] = src[j];
 		j++;
 		len++;
 	}
