@@ -7,13 +7,13 @@
 void rev_string(char *s)
 {
 	int len, i, j = 0;
-	char w[];
+	char w[1000];
 
 	while (s[len] != '\0')
 	{
 		len++;
 	}
-	while (i != len)
+	while (len != i)
 	{
 		w[j] = s[len];
 		len--;
