@@ -9,7 +9,7 @@ void rev_string(char *s)
 	int len = 0;
 	int i = 0;
 	int j = 0;
-	char str[1000];
+	char *str;
 
 	while (s[len] != '\0')
 	{
@@ -21,6 +21,6 @@ void rev_string(char *s)
 		len--;
 		j++;
 	}
-	istr[j++] ='\0';
+	str[j++] = '\0';
 	_putchar('\n');
 }
