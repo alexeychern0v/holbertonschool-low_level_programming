@@ -6,14 +6,16 @@
  */
 void rev_string(char *s)
 {
-	int len, i, j = 0;
+	int len = 0;
+	int i = 0;
+	int j = 0;
 	char w[1000];
 
 	while (s[len] != '\0')
 	{
 		len++;
 	}
-	while (len != i)
+	while (len >= i)
 	{
 		w[j] = s[len];
 		len--;
