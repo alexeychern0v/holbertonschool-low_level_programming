@@ -21,7 +21,7 @@ char *cap_string(char *str)
 		{
 			str[len] -= 32;
 		}
-		lem++;
+		len++;
 	}
 	return (str);
 }
