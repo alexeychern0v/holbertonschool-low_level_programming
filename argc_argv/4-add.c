@@ -15,7 +15,7 @@
 int main(int argc, char *argv[])
 {
 	int len;
-	int k;
+	unsigned int k;
 	int sum;
 	char *add;
 
