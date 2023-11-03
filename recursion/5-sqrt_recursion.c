@@ -31,7 +31,7 @@ int find_sqrt(int n, int a)
  */
 int _sqrt_recursion(int n)
 {
-	int root = 0;
+	int a = 0;
 
 	if (n < 0)
 		return (-1);
