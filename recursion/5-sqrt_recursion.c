@@ -1,37 +1,43 @@
 #include "main.h"
-/**
- *_sqrt_recursion - print square root of a number
- *
- *_sqrt_recursion1 - another func
- *@n: number
- *
- *Return: result
- */
+int find_sqrt(int num, int root);
+int _sqrt_recursion(int n);
 
-int _sqrt_recursion(int n)
+/**
+ * _sqrt_recursion1 - find the natural square root of a number.
+ * 
+ * @n: the number
+ *
+ * @a: the root to test
+ *
+ * Return: result
+ */
+int find_sqrt(int n, int a)
 {
-	if (n < 0)
-	{
+	if ((a * a) == n)
+		return (a);
+
+	if (a == n / 2)
 		return (-1);
-	}
-	else if (n == 0 || n == 1)
-	{
-		return (n);
-	}
+
+	return (find_sqrt(n, a + 1));
 }
 
-int _sqrt_recursion1(int n, int a)
+/**
+ * _sqrt_recursion - find the natural square root of a number.
+ *
+ * @n: the number
+ *
+ * Return: result
+ */
+int _sqrt_recursion(int n)
 {
-	if (a * a == n)
-	{
-		return (a);
-	}
-	else if (a * a > n)
-	{
+	int root = 0;
+
+	if (n < 0)
 		return (-1);
-	}
-	else
-	{
-		return (_sqrt_recursion1(n, a + 1));
-	}
+
+	if (n == 1)
+		return (1);
+
+	return (find_sqrt(n, a));
 }
