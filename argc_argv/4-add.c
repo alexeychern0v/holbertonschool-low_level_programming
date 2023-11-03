@@ -23,19 +23,22 @@ int main(int argc, char *argv[])
 	{
 		printf("0\n");
 	}
-	for (len = 1; len < argc; len++)
+	else
 	{
-		add = argv[len];
-		for (k = 0; k < strlen(add); k++)
+		for (len = 1; len < argc; len++)
 		{
-			if (add[k] < '0' || add[k] > '9')
+			add = argv[len];
+			for (k = 0; k < strlen(add); k++)
 			{
-				printf("Error\n");
-				return (1);
+				if (add[k] < '0' || add[k] > '9')
+				{
+					printf("Error\n");
+					return (1);
+				}
 			}
+			sum += atoi(argv[len]);
 		}
-		sum += atoi(argv[len]);
-	printf("%d\n", sum);
+		printf("%d\n", sum);
+		return (0);
 	}
-	return (0);
 }
