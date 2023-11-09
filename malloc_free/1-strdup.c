@@ -6,7 +6,7 @@ char *_strdup(char *str)
 	int i;
         char *a;
 
-	if (str == 0)
+	if (str == NULL)
 	{
 		return (NULL);
 	}
@@ -23,5 +23,6 @@ char *_strdup(char *str)
 	{
 		a[i] = str[i];
 	}
+	a[i] = '\0';
 	return (a);
 }
