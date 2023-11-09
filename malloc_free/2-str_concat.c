@@ -1,3 +1,13 @@
+#include "main.h"
+/**
+  *str_concat - concatenates two strings
+  *
+  *@s1: string
+  *
+  *@s2: string
+  *
+  *Return: concatenated strings
+  */
 char *str_concat(char *s1, char *s2)
 {
 	int size1, size2, sizeall = 0;
@@ -20,7 +30,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		size2++;
 	}
-	sizeall = size1 + size2;
+	sizeall = size1 + size2 + 1;
 	s = malloc(sizeall * sizeof(char));
 	if (s == NULL)
 	{

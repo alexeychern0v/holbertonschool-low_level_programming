@@ -1,5 +1,11 @@
 #include "main.h"
-
+/**
+  *_strdup - pointer to space in memory
+  *
+  *@str: string
+  *
+  *Return: pointer
+  */
 char *_strdup(char *str)
 {
 	int size = 0;
@@ -14,7 +20,7 @@ char *_strdup(char *str)
 	{
 		size++;
 	}
-	a = malloc((size) * sizeof(char) + 1);
+	a = malloc(size * sizeof(char) + 1);
 	if (a == NULL)
 	{
 		return (NULL);
