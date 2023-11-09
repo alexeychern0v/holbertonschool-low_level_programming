@@ -10,7 +10,9 @@
   */
 char *str_concat(char *s1, char *s2)
 {
-	int size1, size2, sizeall = 0;
+	int size1 = 0;
+	int size2 = 0;
+	int sizeall = 0;
 	int i, j;
 	char *s;
 
@@ -30,7 +32,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		size2++;
 	}
-	sizeall = size1 + size2;
+	sizeall = size1 + size2 + 1;
 	s = malloc(sizeall * sizeof(char));
 	if (s == NULL)
 	{
