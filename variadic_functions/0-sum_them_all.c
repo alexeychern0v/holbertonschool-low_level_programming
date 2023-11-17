@@ -3,6 +3,8 @@
  * sum_them_all - sum of all parameters
  *
  * @n: n arguments
+ *
+ * Return: sum or 0
  */
 
 int sum_them_all(const unsigned int n, ...)
@@ -17,7 +19,7 @@ int sum_them_all(const unsigned int n, ...)
 	va_start(args, n);
 
 	for (i = 0; i < n; i++)
-		sum += va_arg(args, int);
+		sum = sum + va_arg(args, int);
 	va_end(args);
 	return (sum);
 }
