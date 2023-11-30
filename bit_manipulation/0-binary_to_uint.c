@@ -19,8 +19,12 @@ unsigned int binary_to_uint(const char *b)
 
 	while (b[n] != '\0')
 	{
+		if (b[n] != '0' || b[n] != '1')
+			return (0);
 		n++;
 	}
+	if (b == NULL)
+		return (0);
 	v = n - 1;
 	for (i = 0; i < n; i++)
 	{
