@@ -1,9 +1,11 @@
 #include "main.h"
 
 /**
- * clear_bit - clear a bit in a number
- * @n: a number
- * @index: an index
+ * clear_bit - set value of a bit to 0
+ * 
+ * @n: the number
+ * 
+ * @index: the index
  * Return: 1 or -1
  */
 

@@ -1,9 +1,12 @@
 #include "main.h"
 
 /**
- * flip_bits - A function that gets number of bits needed to flip
- * @n: How many bit flips are needed to equal m for n
- * @m: The number to set other equal
+ * flip_bits - function that gets number of bits needed to flip
+ *
+ * @n: the number
+ *
+ * @m: The number
+ *
  * Return: The number of fliped bits
  */
 
