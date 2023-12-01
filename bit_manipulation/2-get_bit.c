@@ -2,8 +2,11 @@
 
 /**
  * get_bit - get a bit
- * @n: un nombr(il)
+ *
+ * @n: the number
+ *
  * @index: the index
+ *
  * Return: the result
  */
 
