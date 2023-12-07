@@ -1,16 +1,19 @@
 #include "main.h"
 
 /**
+ * read_textfile - reads a text file and prints it to the POSIX standard output
  *
+ * @filename: pointer to the string
  *
+ * @letters: number of letters in string
  *
- *
+ * Return: number of letters printed
  */
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
-	ssize_t numwr, numrd;
+	ssize_t w, r;
 	char *buff;
 
 	if (filename == NULL)
@@ -22,11 +25,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (buff == NULL)
 		return (0);
 
-	numrd = read(fd, buff, letters);
-	numwr = write(STDOUT_FILENO, buff, numrd);
+	r = read(fd, buff, letters);
+	w = write(STDOUT_FILENO, buff, r);
 
 	close(fd);
 	free(buff);
 
-	return (numwr);
+	return (w);
 }
